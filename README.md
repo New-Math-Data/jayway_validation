@@ -21,4 +21,16 @@
 
 - [Micronaut Serialization Jackson Core documentation](https://micronaut-projects.github.io/micronaut-serialization/latest/guide/)
 
+## Commands
+- Build new docker image and run it ```bash ./run-build-docker.sh```
+- Run an existing imange ```bash ./run-docker.sh.sh```
 
+## Use
+POST http://localhost:8080/json
+```json
+{
+    "json": "string",
+    "filter": "string"
+}
+```
+[more info about the filter](https://github.com/json-path/JsonPath)
