@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "c531f142-fb19-4712-8bbd-2f0a939a9054",
+		"name": "JayWay",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3734550"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"json\": {\n        \"store\": {\n            \"book\": [\n                {\n                    \"category\": \"reference\",\n                    \"author\": \"Nigel Rees\",\n                    \"title\": \"Sayings of the Century\",\n                    \"price\": 8.95\n                },\n                {\n                    \"category\": \"fiction\",\n                    \"author\": \"Evelyn Waugh\",\n                    \"title\": \"Sword of Honour\",\n                    \"price\": 12.99\n                },\n                {\n                    \"category\": \"fiction\",\n                    \"author\": \"Herman Melville\",\n                    \"title\": \"Moby Dick\",\n                    \"isbn\": \"0-553-21311-3\",\n                    \"price\": 8.99\n                },\n                {\n                    \"category\": \"fiction\",\n                    \"author\": \"J. R. R. Tolkien\",\n                    \"title\": \"The Lord of the Rings\",\n                    \"isbn\": \"0-395-19395-8\",\n                    \"price\": 22.99\n                }\n            ],\n            \"bicycle\": {\n                \"color\": \"red\",\n                \"price\": 19.95\n            }\n        },\n        \"expensive\": 10\n    },\n    \"filter\": \"$.store.book[*].author\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
